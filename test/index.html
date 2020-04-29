@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Тестовое задание</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <script type="text/javascript" src="/lpu.json"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row justify-content-center">
+	<table class="table" id="maintable">
+		<thead>
+			<tr>
+				<th>Наименование</th>
+				<th>Адрес</th>
+				<th>Телефон</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<form class="addnote_form">
+		<div class="form-row" id="inputdata">
+			<div class="col-md-4 mb-4">
+				<input type="text" class="form-control" name="name" id="full_name" placeholder="Наименование"  required="" >
+					<div class="invalid-feedback">
+				    	Заполните это поле
+				    </div>
+			</div>
+			<div class="col-md-3 mb-4">
+				<input type="text" class="form-control" name="name" id="address" placeholder="Адрес" required="">
+				<div class="invalid-feedback">
+			    	Заполните это поле
+			    </div>
+			</div>
+			<div class="col-md-3 mb-4">
+				<input type="text" class="form-control" name="name" id="phone" placeholder="Телефон" required="">
+				<div class="invalid-feedback">
+			    	Заполните это поле
+			    </div>
+			</div>
+			<div class="col-md-2 mb-4">
+				<a class="btn btn-primary" id="addbutton" onclick="addnote();">Добавить</a>
+				<a class="btn btn-primary" id="changebutton" hidden="" >Сохранить</a>
+			</div>
+			
+		</div>
+	</form>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="/main.js"></script>
+</html>
