@@ -31,7 +31,7 @@ for(var i = 0;i<localStorage.length; i++) {
 	}
 	//Разбираем строку JSON
 	var item = JSON.parse(localStorage.getItem('key'+k));
-	//Создаем строку в таблице и заполняем первые 3 ячейки данными из хранилища
+	//Создаем строку для таблицы и заполняем первые 3 ячейки данными из хранилища
     var row = document.createElement("TR");
     var td1 = document.createElement("TD");
     td1.appendChild(document.createTextNode(item.full_name));
